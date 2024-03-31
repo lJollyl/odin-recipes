@@ -1,0 +1,37 @@
+.return-home {
+background-color: blanchedalmond;
+color: blueviolet;
+font-weight: 900;
+}
+
+.food-pic {
+width: 500;
+height: auto;
+}
+
+.recipe-name {
+    color:rgb(100,140,145);
+    background-color:rgb(40, 80, 60);
+    font-weight: 900;
+}
+
+.recipe-step {
+color:rgb(56, 146, 127);
+font-weight: 500;
+}
+
+.ingredients {
+color:rgb(179, 40, 137);
+}
+
+.steps {
+color:rgb(206, 176, 76);
+}
+
+.optional {
+color:rgb(200,150,130);
+}
+
+.ingredients, .optional, .recipe-name, .recipe-step, .steps, .required, p, .return-home, a {
+ text-align:center;
+}
