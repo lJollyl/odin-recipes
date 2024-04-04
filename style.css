@@ -1,7 +1,28 @@
+.pages-block {
+    display: block;
+}
+
+.pages-list {
+display: flex;
+list-style: none;
+border: 3px solid blue;
+}
+
 .return-home {
 background-color: blanchedalmond;
 color: blueviolet;
 font-weight: 900;
+font-family: Verdana, sans-serif;
+}
+
+.recipe-link {
+    background-color: darkolivegreen;
+    color:cornflowerblue;
+    border: 2px solid brown;
+}
+
+.recipe-link .return-home {
+ display: flex;
 }
 
 .food-pic {
@@ -13,6 +34,7 @@ height: auto;
     color:rgb(100,140,145);
     background-color:rgb(40, 80, 60);
     font-weight: 900;
+    font-family: Arial, sans-serif;
 }
 
 .recipe-step {
@@ -22,10 +44,12 @@ font-weight: 500;
 
 .ingredients {
 color:rgb(179, 40, 137);
+font-family: 'Trebuchet MS', sans-serif;
 }
 
 .steps {
 color:rgb(206, 176, 76);
+font-family: Georgia, sans-serif;
 }
 
 .optional {
@@ -34,4 +58,25 @@ color:rgb(200,150,130);
 
 .ingredients, .optional, .recipe-name, .recipe-step, .steps, .required, p, .return-home, a {
  text-align:center;
+}
+
+.food-pic {
+    display: block;
+    width: 150;
+    height: auto;
+margin-top: 50px;
+margin-bottom: 40px;
+margin-left: 535px;
+margin-right: 30px;
+padding: 4px;
+}
+
+img {
+    display: flex;
+    width: 300px;
+    height: auto;
+}
+
+li {
+    display: list-item;
 }
