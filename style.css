@@ -1,18 +1,36 @@
+/* Sets global border-box and style */
+
+html {
+    box-sizing: border-box;
+    background-color: rgb(67, 88, 88);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/*------------------------------------------*/
+
+/* Style for link buttons and lists */
+
 .pages-block {
     display: block;
 }
 
 .pages-list {
-display: flex;
-list-style: none;
-border: 3px solid blue;
+    display: flex;
+    list-style: none;
+    border: 3px dotted blue;
+    padding-left: 550px;
 }
 
 .return-home {
-background-color: blanchedalmond;
-color: blueviolet;
-font-weight: 900;
-font-family: Verdana, sans-serif;
+    background-color: blanchedalmond;
+    color: blueviolet;
+    font-weight: 900;
+    font-family: Verdana, sans-serif;
 }
 
 .recipe-link {
@@ -22,13 +40,38 @@ font-family: Verdana, sans-serif;
 }
 
 .recipe-link .return-home {
- display: flex;
+    display: flex;
+}
+
+/* ----------------------------------------------- */
+
+/* Style for top page food image */
+
+.food-pic {
+    width: 500;
+    height: auto;
+}
+
+img {
+    display: flex;
+    width: 300px;
+    height: auto;
 }
 
 .food-pic {
-width: 500;
-height: auto;
+    display: block;
+    width: 150;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 535px;
+    margin-right: 30px;
+    padding: 4px;
 }
+
+/*----------------------------*/
+
+/* Style for Recipe name, headings, text */
 
 .recipe-name {
     color:rgb(100,140,145);
@@ -38,44 +81,53 @@ height: auto;
 }
 
 .recipe-step {
-color:rgb(56, 146, 127);
-font-weight: 500;
+    color:rgb(56, 146, 127);
+    font-weight: 500;
 }
 
 .ingredients {
-color:rgb(179, 40, 137);
-font-family: 'Trebuchet MS', sans-serif;
+    color:rgb(233, 78, 186);
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 .steps {
-color:rgb(206, 176, 76);
-font-family: Georgia, sans-serif;
+    color:rgb(206, 176, 76);
+    font-family: Georgia, sans-serif;
 }
 
 .optional {
-color:rgb(200,150,130);
+    color:rgb(200,150,130);
 }
 
 .ingredients, .optional, .recipe-name, .recipe-step, .steps, .required, p, .return-home, a {
- text-align:center;
+    text-align:center;
 }
 
-.food-pic {
-    display: block;
-    width: 150;
-    height: auto;
-margin-top: 50px;
-margin-bottom: 40px;
-margin-left: 535px;
-margin-right: 30px;
-padding: 4px;
+/* ------------------------------------------ */
+
+/* Style for ingredients and steps lists */
+
+.ingredients-steps-list {
+    width: 550px;
+    height: fit-content;
+    margin-left: 400px;
+
 }
 
-img {
-    display: flex;
-    width: 300px;
-    height: auto;
+.ingredients-list {
+    padding-right: 50px;
+    padding-left: 100px;
+    border: 4px dotted rgb(100,140,145);
+    background-color: dimgray;
 }
+
+.steps-list {
+    border: 4px groove rgb(200,150,130);
+    background-color: dimgray;
+
+}
+/* ---------------------------------- */
+
 
 li {
     display: list-item;
